@@ -44,11 +44,15 @@
 			</nav>
 			<p>Page Built By <a href="nguyenco.com/">Nguyen Co. </a>&copy; 2025</p>
 			<a href="https://www.validator.w3.org/check?uri=referer" id="validation-link-html">
-                <img src="https://cdn.voison.link/img/htmlValidationButton.png" alt="valid HTML">
+                <img src="https://cdn.voison.link/divonb/htmlValidationButton.png" alt="valid HTML">
             </a>
 			<a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
-                <img src="https://cdn.voison.link/img/cssValidationButton.png" alt="valid CSS">
+                <img src="https://cdn.voison.link/divonb/cssValidationButton.png" alt="valid CSS">
             </a>
         </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </body>
 </html>

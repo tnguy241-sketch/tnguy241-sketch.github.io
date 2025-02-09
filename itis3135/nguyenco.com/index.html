@@ -3,15 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device width, initial-scale=1.0">
-        <title>Design Page</title>
+        <title>Nguyen Co.</title>
         <style>
             body{
                 background-color: darkorange;
                 color:blue;
             }
+            a{
+                color:blueviolet;
+                margin:auto;
+            }
+            img{
+                height:60%;
+                width:60%;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+                padding: 8px;
+            }
+            section{
+                display: block;
+            }
         </style>
     </head>
     <body>
-        <p>This is the company's design page.</p>
+        <header>
+            <h1>Nguyen Co.</h1>
+            <figure>
+                <img src="images/narwhal.png" alt="narwhal">
+            </figure>
+        </header>
+        <main>
+            <h2>Nguyen Co.</h2>
+        </main>
+        <p>This company is one of the most popular in the US for selling dental products.</p>
+        <ul>
+            <li>We saved over hundreds of teeth per year.</li>
+            <li>The money donated will be used to support marine life.</li>
+            <li>9 out of 10 dentists agree with our products.</li>
+            <li>We have over 20 chains all around the US.</li>
+            <li>We have good dental plans.</li>
+        </ul>
+        <p>
+            We care about our clients and their teeth.<br>
+            We also do dental appointments.<br>
+            If you want to schedule an appointment, you can meet in-person at one of our offices, contact us online or on the phone.
+        </p>
+        <section>
+            <h1>Contact Info</h1>
+            <p>E-Mail: nguyenco@gmail.com</p>
+            <p>Phone: 980-453-1532</p>
+            <p>Address: 154 Main Street<br>
+                Hoover Drive, 34278
+                North Carolina
+            </p>
+        </section>
+        <footer>
+            <p>Nguyen Co. </a>&copy; 2025</p>
+			<a href="https://www.validator.w3.org/check?uri=referer" id="validation-link-html">
+                <img src="https://cdn.voison.link/divonb/htmlValidationButton.png" alt="valid HTML">
+            </a>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+                <img src="https://cdn.voison.link/divonb/cssValidationButton.png" alt="valid CSS">
+            </a>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </body>
 </html>

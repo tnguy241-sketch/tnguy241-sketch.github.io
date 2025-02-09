@@ -1,0 +1,20 @@
+body{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: deeppink;
+    font-family: monospace;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+main{
+    text-align: left;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}

@@ -27,3 +27,9 @@ figure{
     text-align: center;
     font-style: italic;
 }
+html,body{all:initial;}
+main,.maincontainer{width:90%;max-width:1200px;margin:0 auto;}
+#colorbox{height: 200px; width:200px;background-color: brown;margin: 50px auto;}
+@media screen and (min-width:981px) and (max-width:1400px){#colorbox{background-color: aqua;}}
+@media screen and (min-width:601px)and (max-width:980x){#colorbox{background-color: chartreuse;}}
+@media screen and (min-width:370px)and (max-width:600px){#colorbox{background-color:gold;}}

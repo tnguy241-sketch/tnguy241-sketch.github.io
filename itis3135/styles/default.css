@@ -27,6 +27,8 @@ figure{
     text-align: center;
     font-style: italic;
 }
+tr:nth-child(even){background-color: #fff;}
+tr:nth-child(odd){background-color: #ddd;}
 html,body{all:initial;}
 main,.maincontainer{width:90%;max-width:1200px;margin:0 auto;}
 #colorbox{height: 200px; width:200px;background-color: brown;margin: 50px auto;}

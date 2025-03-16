@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device width, initial-scale=1.0">
+        <title>Tan Nguyen's Tricky Narwhals |ITIS 3135| Hobby</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            body{
+                background-color: blueviolet;
+                color: darkorange;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+                padding: auto;
+            }
+            p{color: forestgreen;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+            <h1>My Hobby</h1>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#what">What</a></li>
+                    <li><a class="nav-link" href="#who">About Me</a></li>
+                    <li><a class="nav-link" href="#when">Best Times</a></li>
+                    <li><a class="nav-link" href="#where">Best Locations</a></li>
+                    <li><a class="nav-link" href="#how">How</a></li>
+                    <li><a class="nav-link" href="#why">Why</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="main-section" id="what">
+                <h2>What</h2>
+                <p>My hobby is video games.</p>
+                <p>Video games are electronic games that can be played on a television or computer screen.</p>
+                <figure>
+                    <img src="images/videogame.jpg">
+                    <figcaption>Video Game</figcaption>
+                    <p><em>video game console</em> Craiyon</p>
+                </figure>
+            </section>
+            <section class="main-section" id="who">
+                <h2>About Me</h2>
+                <p>My name is Tan Nguyen.</p>
+                <p>I am a young man who has an interest in technology.</p>
+                <figure>
+                    <img src="images/self.jpg">
+                    <figcaption>Caricature</figcaption>
+                    <p><em>anime boy with black hair and glasses</em> Craiyon</p>
+                </figure>
+            </section>>
+            <section class="main-section" id="when">
+                <h2>Best Times</h2>
+                <p>Here are some best times available.</p>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>5-9 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>5-9 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>5-9 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>5-9 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>5-11 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>4-11 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>5-10 PM</td>
+                    </tr>
+                </table>
+                <figure>
+                    <img src="images/cooperate.jpg">
+                    <figcaption>co-op gaming</figcaption>
+                    <p><em>Game Night</em> Craiyon</p>
+                </figure>
+            </section>
+            <section class="main-section" id="where">
+                <h2>Best Locations</h2>
+                <p>Here are some available locations.</p>
+                <ul>
+                    <li>Charlotte, NC</li>
+                    <li>San Francisco, CA</li>
+                    <tr>Philadelphia, PA</li>
+                    <tr>Houston, Texas</li>
+                </ul>
+                <figure>
+                    <img src="images/california.jpg">
+                    <figcaption>California</figcaption>
+                    <p><em>sunny california</em> Craiyon</p>
+                </figure>
+            </section>
+            <section class="main-section" id="how">
+                <h2>How</h2>
+                <p>Video games can improve cognitive functions.</p>
+                <p>Video games have become a significant part of popular culture.</p>
+                <figure>
+                    <img src="images/gear.jpg">
+                    <figcaption>Gears</figcaption>
+                    <p><em>gears video game</em> Craiyon</p>
+                </figure>
+            </section>
+            <section class="main-section" id="why">
+                <h2>Why</h2>
+                <p>I was interested in video games when I was young.</p>
+                <p>Because of this, I have taken this as my hobby.</p>
+                <figure>
+                    <img src="images/owl.jpg">
+                    <figcaption>Owl on a video game console</figcaption>
+                    <p><em>video game hobby</em> Craiyon</p>
+                </figure>
+            </section>
+            <section>
+                <h2>AI Prompts</h2>
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/tnguy241/itis3135/hobby" id="validation-link-disability">
+                <img src="images/button_validation_wcag-1.png" alt="valid disability/accessibility">
+            </a>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+            const sections=document.querySelectorAll(".main-section");
+            function hideSections(e){
+                sections.forEach(section=>{
+                    if(!(e.currentTarget===section))
+                {
+                    section.style.display='none';
+                }
+                });
+            }
+            sections.forEach(element=>element.addEventListener('click',hideSections));
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>

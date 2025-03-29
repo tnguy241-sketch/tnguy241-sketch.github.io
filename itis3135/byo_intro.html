@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device width, initial-scale=1.0">
+        <title>Tan Nguyen's Tricky Narwhals |ITIS 3135| BYO Intro</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name" value="Tan Nguyen" required><br>
+                <label for="mascot">Mascot:</label><br>
+                <input type="text" id="mascot" placeholder="Enter your mascot" value="Narwhal" required><br>
+                <label for="image">Image:</label><br>
+                <input type="file" name="file" id="image" required><br>
+                <div id="loadImage"></div>
+                <label for="imgCaption">Image Caption:</label><br>
+                <input type="text" id="imgCaption" placeholder="Enter a caption" value="Taking a hike" required><br>
+                <label for="personal">Personal Background:</label><br>
+                <input type="text" id="personal" placeholder="Enter your personal background" value="Born in California..." required><br>
+                <label for="profession">Professional Background:</label><br>
+                <input type="text" id="profession" placeholder="Enter your professional background" value="Software Engineer" required><br>
+                <label for="academic">Academic Background:</label><br>
+                <input type="text" id="academic" placeholder="Enter your academic background" value="Studied computer science..." required><br>
+                <label for="web">Background in Web Development</label><br>
+                <input type="text" id="web" placeholder="Enter your background in web development" value="Started web development in 2025" required><br>
+                <label for="platform">Primary Computer Platform</label><br>
+                <input type="text" id="platform" placeholder="Enter what computer platform you use" value="Windows" required><br>
+                <label for="courses">Courses Currently Taking</label><br>
+                <div id="courses"></div>
+                <button id="addCourseButton">Add Course</button>
+                <button id="deleteCourseButton">Delete Course</button>
+                <label for="fun">Funny Thing</label><br>
+                <input type="text" id="fun" placeholder="Enter a funny thing about yourself" value="never studied mycology despite love of mushrooms"><br>
+                <label for="anything">Anything else?</label><br>
+                <input type="text" id="anything" placeholder="Enter anything more about yourself" value="had a stuffed animal since the age of 2"><br>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
+</html>

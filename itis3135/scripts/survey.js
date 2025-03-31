@@ -49,12 +49,12 @@ function validateForm() {
         newCourse.textContent="New Course";
         courses.appendChild(newCourse);
     });
-    deleteCourseButton.addEventListener('click',() => {
+    deleteCourseButton.addEventListener('click', ()=> {
         const lastCourse=courses.lastElementChild;
-        if(lastCourse){
+        if (lastCourse){
             lastCourse.remove();
         }
-    })
+    });
     agree.addEventListener('change',function(){
         if (agree.checked){
             console.log("Checkbox is checked.");
@@ -64,7 +64,7 @@ function validateForm() {
             console.log("Please click the checkbox.");
             return false;
         }
-    })
+    });
 }
 function loadImage(){
     var image=document.getElementById("image").files[e];

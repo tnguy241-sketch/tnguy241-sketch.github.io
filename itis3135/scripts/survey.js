@@ -49,7 +49,7 @@ function validateForm() {
         newCourse.textContent="New Course";
         courses.appendChild(newCourse);
     });
-    deleteCourseButton.addEventListener('click', ()=> {
+    deleteCourseButton.addEventListener('click', () => {
         const lastCourse=courses.lastElementChild;
         if (lastCourse){
             lastCourse.remove();

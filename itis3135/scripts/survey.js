@@ -1,4 +1,5 @@
 function validateForm() {
+    const form=document.getElementById("myForm");
     const name=document.getElementById("name").value;
     const mascot=document.getElementById("mascot").value;
     const imageCaption=document.getElementById("imgCaption").value;
@@ -11,6 +12,8 @@ function validateForm() {
     const addCourseButton=document.getElementById("addCourseButton");
     const deleteCourseButton=document.getElementById("deleteCourseButton");
     const agree=document.getElementById("agree");
+    const submit=document.getElementById("submitBtn");
+    const reset=document.getElementById("resetBtn");
     if (name=""){
         alert("Enter your name");
         return false;
@@ -64,6 +67,12 @@ function validateForm() {
             console.log("Please click the checkbox.");
             return false;
         }
+    });
+    submit.addEventListener('click',function(){
+        form.submit();
+    });
+    reset.addEventListener('click',function(){
+        form.reset();
     });
 }
 function loadImage(){

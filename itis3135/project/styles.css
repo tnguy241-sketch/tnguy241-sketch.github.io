@@ -3,12 +3,13 @@ html{
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
     text-align: center;
+    color:darkorange;
 }
 body{min-height: 100vh;
 background-image: url(data.jpg);
 background-size: cover;
 background-position: right;
-overflow: hidden;}
+}
 .signup{
     box-sizing: border-box;
     height:100vh;
@@ -47,7 +48,7 @@ font: inherit;
 font-weight: 500;
 cursor: pointer;}
 a{text-decoration: none;
-color: darkcyan;}
+color: darkred;}
 a:hover{text-decoration: underline;}
 @media(max-Width:1100px){.signup{width:min(600px,100%); border-radius: 0;}}
 #error-message{color: red;}

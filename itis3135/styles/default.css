@@ -27,11 +27,71 @@ figure{
     text-align: center;
     font-style: italic;
 }
-tr:nth-child(even){background-color: #fff;}
-tr:nth-child(odd){background-color: #ddd;}
-html,body{all:initial;}
-main,.maincontainer{width:90%;max-width:1200px;margin:0 auto;}
-#colorbox{height: 200px; width:200px;background-color: brown;margin: 50px auto;}
-@media screen and (min-width:981px) and (max-width:1400px){#colorbox{background-color: aqua;}}
-@media screen and (min-width:601px)and (max-width:980x){#colorbox{background-color: chartreuse;}}
-@media screen and (min-width:370px)and (max-width:600px){#colorbox{background-color:gold;}}
+tr:nth-child(even){
+    background-color: #fff;
+}
+tr:nth-child(odd){
+    background-color: #ddd;
+}
+html,body{
+    all:initial;
+}
+main,.maincontainer{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+#colorbox{
+    height: 200px;
+    width:200px;
+    background-color: brown;
+    margin: 50px auto;
+}
+@media screen and (min-width:981px) and (max-width:1400px){
+    #colorbox{
+        background-color: aqua;
+    }
+}
+@media screen and (min-width:601px) and (max-width:980x){
+    #colorbox{
+        background-color: chartreuse;
+    }
+}
+@media screen and (min-width:370px) and (max-width:600px){
+    #colorbox{
+        background-color:gold;
+    }
+}
+div,img{
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+}
+.slides{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+.previous,.next{
+    cursor: pointer;
+    position: absolute;
+    top:30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{right:0; border-radius: 3px 0 0 3px;}
+.previous:hover,.next:hover{background-color: rgba(0,0,0,0.8);}
+.numbertext{color: greenyellow;font-size: 12px; padding: 8px 12px;position: absolute;top:0}
+.caption-container{text-align: center; background-color: #222; padding: 2px 16px;color: white;}
+.row::after{content: "";display: table;clear: both;}
+.column{float: left;width:11.11%}
+.demo{opacity: 0.6;}
+.active,.demo:hover{opacity: 1;}

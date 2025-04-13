@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device width, initial-scale=1.0">
+        <title>Tan Nguyen's Tricky Narwhals |ITIS 3135| Slideshow</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Slideshow</h2>
+            <div class="container">
+                <div class="slides">
+                    <div class="numberText">1 / 9</div>
+                    <img src="images/turtles.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">2 / 9</div>
+                    <img src="images/alligator.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">3 / 9</div>
+                    <img src="images/nightlight.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">4 / 9</div>
+                    <img src="images/noodles.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">5 / 9</div>
+                    <img src="images/guitar.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">6 / 9</div>
+                    <img src="images/underwear.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">7 / 9</div>
+                    <img src="images/yarn.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">8 / 9</div>
+                    <img src="images/eraser.jpg" style="width: 100%;">
+                </div>
+                <div class="slides">
+                    <div class="numberText">9 / 9</div>
+                    <img src="images/nailclipper.jpg" style="width: 100%;">
+                </div>
+                <a class="previous" onclick="nextSlide(-1)">&#10094;</a>
+                <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/turtles.jpg" style="width: 100%;" onclick="currentSlide(1)" alt="Turtles">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/alligator.jpg" style="width: 100%;" onclick="currentSlide(2)" alt="Alligator">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/nightlight.jpg" style="width: 100%;" onclick="currentSlide(3)" alt="Nightlight">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/noodles.jpg" style="width: 100%;" onclick="currentSlide(4)" alt="Noodles">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/guitar.jpg" style="width: 100%;" onclick="currentSlide(5)" alt="Guitar">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/underwear.jpg" style="width: 100%;" onclick="currentSlide(6)" alt="Underwear">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/yarn.jpg" style="width: 100%;" onclick="currentSlide(7)" alt="Yarn">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/eraser.jpg" style="width: 100%;" onclick="currentSlide(8)" alt="Eraser">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/nailclipper.jpg" style="width: 100%;" onclick="currentSlide(9)" alt="Nail Clipper">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/slideshow.js"></script>
+    </body>
+</html>

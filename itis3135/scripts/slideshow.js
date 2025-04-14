@@ -1,3 +1,4 @@
+let slideIndex=1;
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slides");
@@ -15,7 +16,6 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     caption.innerHTML = dots[slideIndex-1].alt;
 }
-let slideIndex=1;
 showSlides(slideIndex);
 function nextSlide(n) {
     showSlides(slideIndex += n);

@@ -9,7 +9,8 @@
     </head>
     <body>
         <header>
-            <h1>Client Project</h1>
+            <h1>Programming Inc.</h1>
+            <h2>The Future of Code</h2>
                 <nav>
                     <a href="./">Project Overview</a> |
                     <a href="index.html">Homepage</a> |
@@ -17,6 +18,8 @@
                     <a href="sitemap.html">Sitemap</a> |
                     <a href="programming.html">Programming Languages</a> |
                     <a href="workinghours.html">Working Hours</a> |
+                    <a href="review1.html">Review 1</a> |
+                    <a href="review2.html">Review 2</a> |
                     <a href="login.html">Login</a> |
                     <a href="signup.html">Signup</a>
                 </nav>
@@ -28,13 +31,41 @@
                 <img src="computer.jpg">
                 <figcaption>Computer</figcaption>
             </figure>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <div class="numText">1/3</div>
+                    <img src="html.jpg" style="width: 100%;">
+                    <div class="text">HTML</div>
+                </div>
+                <div class="slides fade">
+                    <div class="numText">2/3</div>
+                    <img src="css.jpg" style="width: 100%;">
+                    <div class="text">CSS</div>
+                </div>
+                <div class="slides fade">
+                    <div class="numText">3/3</div>
+                    <img src="javascript.jpg" style="width: 100%;">
+                    <div class="text">JavaScript</div>
+                </div>
+                <a class="previous" onclick="nextSlide(-1)">&#10094</a>
+                <a class="next" onclick="nextSlide(1)">&#10095</a>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </main>
         <footer>
+            <p><a href="/itis3135/index.html">Click here</a> to go back to course site.</p>
+            <p><a href="nguyenco.com/">Nguyen Co. </a>&copy; 2025</p>
             <script>
                 document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
                 document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
             </script>
             <script src="scripts/HTMLInclude.min.js"></script>
+            <script src="slideshow.js"></script>
         </footer>
     </body>
 </html>

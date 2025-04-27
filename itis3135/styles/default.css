@@ -63,9 +63,6 @@ main,.maincontainer{
         background-color:gold;
     }
 }
-*{
-    box-sizing: border-box;
-}
 .container{
     position: relative;
     margin: auto;

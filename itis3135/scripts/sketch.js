@@ -3,7 +3,7 @@ function setup() {
   background(0);
   strokeWeight(10);
   colorMode(HSB);
-  describe('Use the mouse to draw on the blank canvas')
+  describe('Use the mouse to draw on the blank canvas');
 }
 function mouseDragged() {
   let lineHue=mouseX-mouseY;
